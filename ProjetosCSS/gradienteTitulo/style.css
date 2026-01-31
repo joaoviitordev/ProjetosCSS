@@ -1,8 +1,9 @@
+body{
+    margin: 0;
+    padding: 0;
+    background: black;
+}
 .center{
-    background: linear-gradient(to left, #69a1d1, #ca3f85); /* da a cor gradiente no titulo */
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent; /* para o background aparecer */
-    background-clip: text;
     display: flex;
     text-align: center;
     justify-content: center;
@@ -10,11 +11,21 @@
     min-height: 100vh;
 }
 
-body{
+.center h1{
+    font-size: 4rem;
     margin: 0;
-    padding: 0;
-    background: black;
+    background: linear-gradient(90deg, #69a1d1, #ca3f85, #69a1d1);
+    background-size: 200% 200%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
+    display: inline-block;
+    animation: AnimarBorda 3s linear infinite;
 }
-h1{
-    text-align: center;
-}  
+
+@keyframes AnimarBorda {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}

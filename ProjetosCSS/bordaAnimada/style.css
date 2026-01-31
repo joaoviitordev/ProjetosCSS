@@ -1,10 +1,10 @@
-*{   /* centralizar qualquer parte do documento na tela */
+*{   
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 } 
 
-body{  /* todo o body foi so pra centralizar o <p> */
+body{  
     display: flex;            
     align-items: center;
     justify-content: center;
@@ -12,18 +12,18 @@ body{  /* todo o body foi so pra centralizar o <p> */
     background: #151329; 
 }
 
-.caixa{  /* tamanho da caixa */
+.caixa{  
     position: relative;
     width: 400px;
     height: 400px;
     color: #fff;
     background: #151329;
-    display: flex;    /* para alinhar o texto */ 
-    align-items: center;  /* para alinhar o texto */ 
-    justify-content: center;  /* para alinhar o texto */
+    display: flex;    
+    align-items: center;   
+    justify-content: center;  
     border-radius: 5px;
     font: bold 2em 'Century Gothic';
-    text-transform: uppercase; /* tudo em maiusculas */
+    text-transform: uppercase; 
 }
 
 .caixa::before, .caixa::after{
@@ -36,7 +36,7 @@ body{  /* todo o body foi so pra centralizar o <p> */
     #ffff00, #00ff00, #0099ff, #001aff, #a200ff);  /* todas as cores que ficam circulando */
     background-size: 300%;
     border-radius: 8px;
-    animation: AnimarBorda 10s linear alternate infinite;  /* efetiva a animação */
+    animation: AnimarBorda 10s linear alternate infinite;  
 }
 
 .caixa::after{  /* efeito de luz/sombra */

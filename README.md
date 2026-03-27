@@ -18,7 +18,7 @@ Os projetos abordam conceitos como:
 ## Tecnologias
 - HTML5
 - CSS3
-- 
+
 ## Observação
 Projetos com foco educacional, voltados para aprendizado contínuo e construção de portfólio front-end.
 
